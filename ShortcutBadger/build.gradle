@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+android {
+
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+//apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
+//apply from: './mvn-push.gradle'
